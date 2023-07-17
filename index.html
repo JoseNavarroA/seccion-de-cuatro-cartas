@@ -9,6 +9,18 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@1,400;1,600&display=swap');
+      html{
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: relative;
+        /* background-image: url("https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=600");
+        background-size: cover; */
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -16,15 +28,178 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 40px;
+      }
+      body{
+        width: 800px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        background: transparent;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+      header p{
+        margin: 0;
+        font-family: 'Work Sans', sans-serif;
+      }
+      h1{
+        margin: 10px 0 15px 0;
+        font-family: 'Work Sans', sans-serif;
+      }
+      h2{
+        margin: 0;
+        font-family: 'Work Sans', sans-serif;
+        
+      }
+      .container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        scale: 0.75;
+      }
+      .container p{
+        margin: 0 0 10px 0;
+        font-family: 'Work Sans', sans-serif;
+      }
+      /* .container div {
+        width: 100px;
+        height: 80px;
+      } */
+      .container2{
+        display: grid;
+        gap: 20px;
+      }
+      div img{
+        width: 40px;
+        height: 40px;
+        align-content: flex-end;
+      }
+      .general{
+        width: 270px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        background: gainsboro;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 0px 10px 10px 10px;
+        box-shadow: 10px 5px 5px rgb(180, 171, 171);
+
+      }
+      
+      
+      .img{
+        display: grid;
+        justify-items: end;
+      }
+      .supervisor{
+        border: solid white;
+        border-top-color: cyan;
+      }
+      .teamBuilder{
+        border: solid white;
+        border-top-color: red;
+      }
+      .karma{
+        border: solid white;
+        border-top-color: yellow;
+      }
+      .calculator{
+        border: solid white;
+        border-top-color: blue;
+      }
+      @media(max-width:900px){
+        body{
+          width: 100%;
+          height: 100%;
+        }
+        header{
+          padding: 10px;
+        }
+        .container{
+          flex-direction: column;
+        }
+        html{
+          display: flex;
+      }
+      }
     </style>
   </head>
   <body>
-    Reliable, efficient delivery Powered by Technology Our Artificial
-    Intelligence powered tools use millions of project data points to ensure
-    that your project is successful Supervisor Monitors activity to identify
-    project roadblocks Team Builder Scans our talent network to create the
-    optimal team for your project Karma Regularly evaluates our talent to ensure
-    quality Calculator Uses data from past projects to provide better delivery
-    estimates
+    <header>
+      <h2>
+        Reliable, efficient delivery 
+      </h2>
+      <h1>
+        Powered by Technology 
+      </h1>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data
+         </p>
+         <p>
+          points to ensure that your project is successful 
+         </p>
+    </header>
+    <div class="container">
+      
+        <div class="supervisor general">
+          <h3>
+            Supervisor 
+          </h3>
+          <p>
+            Monitors activity to identify project roadblocks
+          </p>
+          <div class="img">
+            <img src="./images/icon-supervisor.svg" alt="">
+          </div>
+          </div>
+        <div class="container2">
+          <div class="teamBuilder general">
+            <h3>
+              Team Builder 
+            </h3>
+            <p>
+              Scans our talent network to create the
+              optimal team for your project 
+            </p>
+            <div class="img">
+              <img src="./images/icon-team-builder.svg" alt="">
+            </div>
+          </div>
+          <div class="karma general">
+            <h3>
+              Karma
+            </h3>
+            <p>
+              Regularly evaluates our talent to ensure
+              quality 
+            </p>
+            <div class="img">
+            <img src="./images/icon-karma.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="calculator general">
+          <h3>
+            Calculator
+          </h3>
+          <p>
+            Uses data from past projects to provide better delivery
+            estimates
+          </p>
+          <div class="img">
+            <img src="./images/icon-calculator.svg" alt="">
+            </div>
+          </div>
+
+    </div>
   </body>
 </html>
